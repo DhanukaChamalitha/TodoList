@@ -3,6 +3,9 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 require('dotenv').config()
 
+const todoEoutes = require('./routes/todoRoutes')
+
+
 const app = express()
 const port = process.env.PORT || 4001
 
@@ -14,5 +17,7 @@ mongoose.connect(connectionString)
         .then(() => console.log('Connected to the database…')) 
         .catch((err) => console.error('Connection error:', err));
 
+
+app.use('/', todoEoutes);
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));

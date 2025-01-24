@@ -8,7 +8,7 @@ function App() {
     <>
       <h1>New</h1>
     </>
-      
+    
   )
 }
 

@@ -1,0 +1,47 @@
+.all-tasks {
+    margin-bottom: 10px;
+}
+
+.all-tasks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.all-tasks li {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.all-tasks li:last-child {
+    border-bottom: none;
+}
+
+.all-tasks .task-text { 
+    flex-grow: 1; 
+    word-wrap: break-word;
+
+}
+.all-tasks button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px 10px; 
+    font-size: 14px; 
+    transition: color 0.3s ease; 
+    background-color: #ff0404;
+    border: 1px solid #ff0404;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.all-tasks button:hover {
+    color: #f80000;
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 3, 3);
+}

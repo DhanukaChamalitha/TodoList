@@ -1,4 +1,4 @@
-FROM node:20-ahpine
+FROM node:20-alpine
 RUN npm install -g nodemon
 WORKDIR /server
 COPY package*.json .

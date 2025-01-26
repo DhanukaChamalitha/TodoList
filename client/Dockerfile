@@ -1,5 +1,5 @@
 # client image
-FROM node:20-apline
+FROM node:20-alpine
 WORKDIR /frontend
 COPY package*.json .
 RUN npm install
